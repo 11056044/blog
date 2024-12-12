@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}首頁 - 我的學習日記{% endblock %}
+
+{% block headmessage %}
+    <h2>歡迎來到我的學習日記！</h2>
+{% endblock %}
+
+{% block content %}
+    {% for post in posts %}
+    <a href='/post/{{ post.slug }}'>{{ post.title }}</a><br>
+    {% endfor %}
+{% endblock %}
