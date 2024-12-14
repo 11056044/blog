@@ -19,11 +19,13 @@ from django.urls import path
 from mysite.views import *
 from mblog import *
 
+
 urlpatterns = [
     path("admin/", admin.site.urls), # 管理后台
     path('',homepage), # 首页
     path('post/', homepage),  # 如果你想在 /post/ 显示所有帖子
     path('post/<slug:slug>/', showpost),  # 单个帖子的详细页面
    
-    
+
 ]
+

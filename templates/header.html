@@ -1,3 +1,8 @@
 <!-- header.html -->
 <header>
-    <h1 style='font-family:微軟正黑體;'>歡迎觀看 學習日記</h1>
+    {% load static %}
+    <h1 style='font-family:微軟正黑體;'>
+        <img src="{% static 'images/logo.png' %}" width="150">
+        歡迎觀看 學習日記
+    </h1>
+</header>
